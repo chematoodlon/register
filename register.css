@@ -295,6 +295,7 @@ z-index:-1;
 }
 	#bgIMG{
 	width:100vw;
+	
 	}
 
 #foreground{
@@ -337,7 +338,7 @@ z-index:1;
 	display:block;
 	position:absolute;
 	top:38.5vw;
-	width:79vw;
+	width:80vw;
 	height:120vw;
 	padding:0vw;
 	margin-left:8px;
@@ -371,7 +372,7 @@ z-index:1;
 		font-size:3.6vw;
 		color:#B9EDDB;
 		}
-			#logoBottomPic{filter:grayscale(100) brightness(50);}
+			#logoBottomPic{}
 		#middleListBottom{
 		display:block;
 		float:right;
