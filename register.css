@@ -199,7 +199,7 @@ top:0vw;
 #Volume{
 	display:block;
 	position:absolute;
-	top:5vw;
+	top:8vw;
 	left:5vw;
 	width:7.5vw;
 	height:5vw;
@@ -212,7 +212,7 @@ top:0vw;
 	display:block;
 	position:absolute;
 	left:85vw;
-	top:5vw;
+	top:10vw;
 	z-index:10;
 	}
 		#menuButtonM{
@@ -312,14 +312,24 @@ z-index:1;
 	top:0vw;
 	width:67.5vw;
 	margin-top:-33.75vw;
+	animation: lswRotate 20s infinite linear;
+	transform-origin:50% 50%;
+	}
+	@keyframes lswRotate{
+		from{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
 	}
 	#pageHeading{
 	display:block;
 	position:absolute;
 	top:4.5vw;
 	font-family:"mandala";
-	font-size:7.75vw;
-	line-height:6.75vw;
+	font-size:7vw;
+	line-height:6.25vw;
 	text-align:center;
 	color:#42210B;
 	}
@@ -327,8 +337,8 @@ z-index:1;
 	display:block;
 	position:absolute;
 	top:38.5vw;
-	width:75vw;
-	height:124vw;
+	width:79vw;
+	height:120vw;
 	padding:0vw;
 	margin-left:8px;
 	}
