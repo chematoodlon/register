@@ -204,7 +204,6 @@ top:0vw;
 	width:7.5vw;
 	height:5vw;
 	z-index:10;
-	filter:invert(100);
 	cursor:pointer;
 	}
 
@@ -223,7 +222,6 @@ top:0vw;
 		width:8vw;
 		z-index:10;
 		cursor:pointer;
-		filter: invert(100);
 		-webkit-transition: visibility 0.1s ease, opacity 0.1s ease;
 		transition: visibility 0.1s ease, opacity 0.1s ease;
 		}
@@ -247,6 +245,7 @@ top:0vw;
 				width:6vw;
 				cursor:pointer;
 				margin-right:0vw;
+				filter: grayscale(100) brightness(0) invert(100);
 				}
 			
 			#mliButtonsM{
@@ -259,11 +258,11 @@ top:0vw;
 			padding-right:8vw;
 			margin-top:-3vw;
 			margin-right:-20vw;
-			background-color:#bababa;
+			background-color:#42210B;
 			width:40vw;
 			height:135vw;
 			justify-content: space-evenly;
-			box-shadow: 0 0 1vw 0vw rgba(186,187,186,0.5);
+			box-shadow: 0 0 1vw 0vw rgba(66,33,11,0.5);
 			border:solid 0.25vw #000;
 			font-size:3.556vw;
 			}
@@ -281,7 +280,7 @@ top:0vw;
 					font-family:'Mandala';
 					font-size:5vw;
 					letter-spacing:0.3vw;
-					color:#000;
+					color:#B9EDDB;
 					padding-top:1.5vw;
 					padding-bottom:1.5vw;
 					}
