@@ -232,7 +232,7 @@ top:0vw;
 		z-index:10;	
 		flex-direction:column;
 		align-items:flex-end;
-		margin-top:-6vw;
+		margin-top:-9vw;
 		margin-left:-50vw;		
 		}
 			#menuCloseButton{
@@ -258,11 +258,11 @@ top:0vw;
 			padding-right:8vw;
 			margin-top:-3vw;
 			margin-right:-20vw;
-			background-color:#42210B;
+			background-color:#1E0E06;
 			width:40vw;
 			height:135vw;
 			justify-content: space-evenly;
-			box-shadow: 0 0 1vw 0vw rgba(66,33,11,0.5);
+			box-shadow: 0 0 1vw 0vw rgba(30,14,6,0.5);
 			border:solid 0.25vw #000;
 			font-size:3.556vw;
 			}
