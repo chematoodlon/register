@@ -40,69 +40,79 @@ visibility:hidden;
 }
 
 #loader{
-	display:flex;
-	position:fixed;
-	top:0vw;
-	left:0vw;
-	width: 100vw;
-	height:100vh;
-	justify-content:center;
-	background: center no-repeat rgb(255,229,178);
-	opacity:1;
-	transition: opacity 2s ease;
-	z-index:9999;
-	}
+display:flex;
+position:fixed;
+top:0vw;
+left:0vw;
+width: 100vw;
+height:100vh;
+justify-content:center;
+background: center no-repeat rgb(255,229,178);
+opacity:1;
+transition: opacity 2s ease;
+z-index:9999;
+}
 
-		#loaderSVG{			
-		width:224px;			
+	#loaderSVG{			
+	width:224px;
+	height:450px;				
+	}
+		#lsWheel{
+		display:block;
+		animation: lswRotate 20s infinite linear;
+		transform-origin:50% 50%;
 		}
-			#lsWheel{
-			display:block;
-			animation: lswRotate 20s infinite linear;
-			transform-origin:50% 50%;
+		@keyframes lswRotate{
+			from{
+				transform: rotate(0deg);
 			}
-			@keyframes lswRotate{
-				from{
-					transform: rotate(0deg);
-				}
-				to{
-					transform: rotate(360deg);
-				}
+			to{
+				transform: rotate(360deg);
 			}
-			#lsClouds{
-			display:block;
-			animation: lscMove 0.5s infinite ease-out;
-			}
-			@keyframes lscMove{
-				0%{
-					transform: translate(0,0) scale(1,1);
-					opacity:100%;
-					
-				}
-				75%{
-					opacity:75%;
-				}
-				100%{
-					transform: translate(-225.28px,-225.28px) scale(1.15,1.15);
-					opacity:0%;
-				}
-			}
-			#lsShip{
-			display:block;
-			animation: lssMove 1s infinite ease-in-out;
-			}
-			@keyframes lssMove{
-				0%{
-					transform: translate(0,0) scale(1,1);					
-				}
-				50%{
-					transform: translate(-170px,-133.12px) scale(1.07,1.07);
+		}
+		#lsClouds{
+		display:block;
+		animation: lscMove 0.5s infinite ease-out;
+		}
+		@keyframes lscMove{
+			0%{
+				transform: translate(0,0) scale(1,1);
+				opacity:100%;
 				
-				}
-				100%{
-					transform: translate(0,0) scale(1,1);					
-				}
 			}
+			75%{
+				opacity:75%;
+			}
+			100%{
+				transform: translate(-225.28px,-225.28px) scale(1.15,1.15);
+				opacity:0%;
+			}
+		}
+		#lsShip{
+		display:block;
+		animation: lssMove 1s infinite ease-in-out;
+		}
+		@keyframes lssMove{
+			0%{
+				transform: translate(0,0) scale(1,1);					
+			}
+			50%{
+				transform: translate(-170px,-133.12px) scale(1.07,1.07);
+			
+			}
+			100%{
+				transform: translate(0,0) scale(1,1);					
+			}
+		}
+			
+	#loaderMessage{
+	position:absolute;
+	top:300px;
+	margin-top:10vw;
+	text-align:center;
+	font-size:1vw;
+	line-height:1.5vw;
+	}
 
 #Volume{
 	display:block;
