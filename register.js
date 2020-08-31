@@ -2,16 +2,19 @@
 var by = document.getElementsByTagName('body')[0];
 var lr = document.getElementById("loader");
 
-var n,lt;
+var n,lt,wiw;
 window.onload = function(){	
 	lt = new Date().getTime() - window.performance.timing.navigationStart;
+	wiw=window.innerWidth;
 	one();
 }
 function one(){
+	if(wiw<=768){
 		lr.style.opacity="0";
 		setTimeout(function(){
 			lr.style.display="none";
 		},2000);
+	}
 }
 
 //Showing and hiding the top menu on clicking the menu button & clicking outside respectively:	
